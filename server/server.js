@@ -20,8 +20,3 @@ const port = 8889; // Choose a different port number
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-server.listen(0, () => {
-  const port = server.address().port;
-  console.log(`Server is running on port ${port}`);
-});
